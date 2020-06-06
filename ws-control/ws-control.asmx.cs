@@ -22,5 +22,17 @@ namespace ws_control
         {
             return "Hola a todos";
         }
+        [WebMethod]
+        public bool test()
+        {
+            try
+            {
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
